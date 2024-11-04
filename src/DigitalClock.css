@@ -1,0 +1,34 @@
+/* DigitalClock.css */
+
+.clock-container {
+    display: flex;
+    flex-direction: column; /* Stack title and time vertically */
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    background-color: #1a1a1a; /* Darker background */
+    color: #ffffff; /* White text for contrast */
+    font-family: 'Arial', sans-serif; /* Use a clean font */
+}
+
+.title {
+    font-size: 3rem; /* Size for the title */
+    margin-bottom: 20px; /* Space between title and clock */
+    color: #61dafb; /* React blue color for title */
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7); /* Subtle shadow for depth */
+}
+
+.clock {
+    font-size: 6rem; /* Large font size for visibility */
+    color: #ffffff; /* White color for clock */
+    text-shadow: 2px 2px 15px rgba(0, 0, 0, 0.5); /* More pronounced shadow for depth */
+    border: 3px solid #61dafb; /* Border around the clock */
+    padding: 30px; /* Space inside the border */
+    border-radius: 15px; /* Rounded corners */
+    background: rgba(255, 255, 255, 0.1); /* Slightly transparent background */
+    transition: background 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.clock:hover {
+    background: rgba(255, 255, 255, 0.2); /* Change background on hover */
+}
